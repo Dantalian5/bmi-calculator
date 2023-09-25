@@ -1,0 +1,12 @@
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.prettierignore
+# Exclude modules files
+node_modules
+#exclude parcel cache files
+.parcel-cache
+#exclude dist folder (only for local deploy)
+dist
+# exclude packaje-lock.json (only usefull on project-uncomment on project-)
+package-lock.json
+ignore
