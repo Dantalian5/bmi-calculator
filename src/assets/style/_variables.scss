@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/static/Inter-SemiBold.ttf);
+	font-weight: 600;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url(../fonts/static/Inter-Regular.ttf);
+	font-weight: 400;
+	font-display: 400;
+}
+$ff-inter: "Inter", sans-serif;
+$c-blue: #345ff6;
+$c-gunmetal: #253347;
+$c-dark-electric-blue: #5e6e85;
+$c-borders: #d8e2e7;
+$c-pure-white: #ffffff;

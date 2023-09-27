@@ -1,0 +1,13 @@
+.l-header {
+	padding-inline: 1.5rem;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+	&__logo {
+		width: fit-content;
+		margin-inline: auto;
+		margin-bottom: 1.5rem;
+	}
+	&__title {
+		margin-bottom: 1.5rem;
+	}
+}
