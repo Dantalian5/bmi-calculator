@@ -20,40 +20,52 @@
 		<link rel="stylesheet" href="assets/style/style.scss" />
 	</head>
 	<body>
-		<header class="l-header">
+		<header class="l-header m-background">
 			<div class="l-header__logo">
 				<img class="m-logo" src="assets/images/logo.svg" alt="logo" />
 			</div>
-			<h1 class="l-header__title f-title">Body Mass Index Calculator</h1>
-			<p class="l-header__text f-paragraph">
+			<h1 class="l-header__title f-heading f-heading-XL f-center">
+				Body Mass Index Calculator
+			</h1>
+			<p class="l-header__text f-body f-body-M f-center">
 				Better understand your weight in relation to your height using our body
 				mass index (BM) calculator. While BMI is not the sole determinant of a
 				healthy weight, it offers a valuable starting point to evaluate your
 				overall health and well-being.
 			</p>
+			<div class="l-header__bmicalc">
+				<form class="m-bmicalc">
+					<h2 class="m-bmicalc__title f-heading f-heading-M">
+						Enter your details below
+					</h2>
+					<div class="m-bmicalc__metric">
+						<div class="m-bmicalc__metric__item m-radio-btn">
+							<input
+								type="radio"
+								name="metric_system"
+								id="ms_metric"
+								value="metric"
+								checked
+								required
+							/>
+							<label class="f-body f-body-M" for="ms_metric">Metric</label>
+						</div>
+						<div class="m-bmicalc__metric__item m-radio-btn">
+							<input
+								type="radio"
+								name="metric_system"
+								id="ms_imperial"
+								value="imperial"
+							/>
+							<label class="f-body f-body-M" for="ms_imperial">Imperial</label>
+						</div>
+					</div>
+				</form>
+			</div>
 		</header>
 
 		<main>
 			<div>
-				<h2>Enter your details below</h2>
-				<fieldset>
-					<input
-						type="radio"
-						name="metric_system"
-						id="ms_metric"
-						value="metric"
-						checked
-						required
-					/>
-					<label for="ms_metric">Metric</label>
-					<input
-						type="radio"
-						name="metric_system"
-						id="ms_imperial"
-						value="imperial"
-					/>
-					<label for="ms_imperial">Imperial</label>
-				</fieldset>
 				<fieldset>
 					<legend>Height</legend>
 					<div>
