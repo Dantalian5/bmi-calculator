@@ -2,5 +2,9 @@
 @use "variables";
 @use "base";
 @use "layout";
+//modules<
 @use "modules";
+@use "modules/fonts";
+@use "modules/calculator";
+//>modules
 @use "state";

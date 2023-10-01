@@ -35,9 +35,9 @@
 		width: 1.875rem;
 		height: 1.875rem;
 		border-radius: 50%;
-
-		outline: 4px solid rgba(var(--Blue), 0.15);
-		background: rgba(var(--Blue), 0.15);
+		--opaque: hsl(from var(--Blue) h s l / 0.15);
+		outline: 1px solid var(--opaque);
+		background: var(--opaque);
 		position: relative;
 		overflow: hidden;
 		&::before {
