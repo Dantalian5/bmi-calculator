@@ -1,7 +1,7 @@
 {
 	"name": "bmi-calculator",
 	"version": "1.0.0",
-	"description": "frontendmemtor.io",
+	"description": "This is a solution to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
 	"source": [
 		"src/index.html"
 	],
@@ -9,14 +9,13 @@
 		"dev": "parcel",
 		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public"
 	},
-	"author": "",
+	"keywords": [],
+	"author": "Marcos Valenzuela",
 	"license": "ISC",
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.9.3",
 		"parcel": "^2.9.3",
-		"parcel-namer-custom": "^0.2.0",
-		"rimraf": "^5.0.1",
-		"sass": "^1.64.1"
+		"parcel-namer-custom": "^0.2.0"
 	},
 	"parcel-namer-custom": {
 		".css$": "assets/style/[name].[hash].[type]",
@@ -24,6 +23,5 @@
 		".ttf$": "assets/fonts/[name].[hash].[type]",
 		".svg$|.jpg$|.png$|.webp$|.webmanifest$": "assets/images/[name].[hash].[type]",
 		".pdf$": "assets/docs/[name].[hash].[type]"
-	},
-	"keywords": []
+	}
 }

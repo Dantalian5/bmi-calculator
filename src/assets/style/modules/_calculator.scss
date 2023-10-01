@@ -4,7 +4,9 @@
 	flex-direction: column;
 	gap: 1.5rem;
 	border-radius: 1rem;
-	background: var(--Pure-White);
+	//background: var(--Pure-White);
+	background: red;
+
 	box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 	&__metric {
 		display: flex;
