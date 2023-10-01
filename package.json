@@ -13,6 +13,7 @@
 	"author": "Marcos Valenzuela",
 	"license": "ISC",
 	"devDependencies": {
+		"@parcel/transformer-sass": "^2.9.3",
 		"parcel": "^2.9.3",
 		"parcel-namer-custom": "^0.2.0"
 	},
