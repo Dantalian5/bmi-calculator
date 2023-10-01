@@ -1,0 +1,20 @@
+{
+	"source":{
+		"src/index.html"
+	}
+	"scripts": {
+		"dev": "parcel src/index.html",
+		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public"
+	},
+	"parcel-namer-custom": {
+		".css$": "assets/style/[name].[hash].[type]",
+		".js$": "assets/js/[name].[hash].[type]",
+		".ttf$": "assets/fonts/[name].[hash].[type]",
+		".svg$|.jpg$|.png$|.webp$|.webmanifest$": "assets/images/[name].[hash].[type]",
+		".pdf$": "assets/docs/[name].[hash].[type]"
+	},
+}
+{
+    "extends": "@parcel/config-default",
+    "namers": ["parcel-namer-custom", "..."]
+}
