@@ -34,66 +34,67 @@
 				overall health and well-being.
 			</p>
 			<div class="l-header__bmicalc">
-				<form class="m-bmicalc">
+				<div class="m-bmicalc" id="myform">
 					<h2 class="m-bmicalc__title f-heading f-heading-M">
 						Enter your details below
 					</h2>
 					<div class="m-bmicalc__metric">
-						<div class="m-bmicalc__metric__item m-radio-btn">
-							<input
-								type="radio"
-								name="metric_system"
-								id="ms_metric"
-								value="metric"
-								checked
-								required
-							/>
-							<label class="f-body f-body-M" for="ms_metric">Metric</label>
+						<div class="m-bmicalc__metric__item">
+							<label
+								class="f-body f-body-M f-body-bold m-radio"
+								for="ms_metric"
+							>
+								<input
+									type="radio"
+									name="metric_system"
+									id="ms_metric"
+									value="metric"
+									class="m-radio__btn"
+									checked
+									required
+								/>
+								<span class="m-radio__checkmark"></span>Metric</label
+							>
 						</div>
-						<div class="m-bmicalc__metric__item m-radio-btn">
-							<input
-								type="radio"
-								name="metric_system"
-								id="ms_imperial"
-								value="imperial"
-							/>
-							<label class="f-body f-body-M" for="ms_imperial">Imperial</label>
+						<div class="m-bmicalc__metric__item">
+							<label
+								class="f-body f-body-M f-body-bold m-radio"
+								for="ms_imperial"
+								><input
+									type="radio"
+									name="metric_system"
+									id="ms_imperial"
+									value="imperial"
+									class="m-radio__btn"
+								/>
+								<span class="m-radio__checkmark"></span>Imperial</label
+							>
 						</div>
 					</div>
-				</form>
+					<div class="m-bmicalc__data">
+						<fieldset class="m-dataholder">
+							<legend class="f-body f-body-S m-dataholder__title">
+								Height
+							</legend>
+							<div class="m-dataholder__property">
+								<div class=""></div>
+								<input
+									id="data-height"
+									type="number"
+									min="1"
+									step="0.01"
+									max="1000"
+									class="m-dataholder__item"
+									title="your height here"
+									placeholder="hola"
+								/>
+							</div>
+						</fieldset>
+					</div>
+				</div>
 			</div>
 		</header>
 
-		<main>
-			<div>
-				<fieldset>
-					<legend>Height</legend>
-					<div>
-						<input type="number" id="he_ft" />
-						<label for="he_ft">ft</label>
-					</div>
-					<div>
-						<input type="number" id="he_in" />
-						<label for="he_in">in</label>
-					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Weight</legend>
-					<div>
-						<input type="number" id="we_st" />
-						<label for="we_st">ft</label>
-					</div>
-					<div>
-						<input type="number" id="we_lbs" />
-						<label for="we_lbs">in</label>
-					</div>
-				</fieldset>
-				<div>
-					<h3>Your BMI is...</h3>
-					<output></output>
-				</div>
-			</div>
-		</main>
 		<!-- add javascript file -->
 		<script src="assets/js/script.js"></script>
 	</body>

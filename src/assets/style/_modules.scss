@@ -1,55 +1,6 @@
 @use "variables" as var;
-.f-heading,
-.f-body {
-	color: var.$c-gunmetal;
-	font-family: var.$ff-inter;
-	font-style: normal;
-}
-.f-center {
-	text-align: center;
-}
-.f-heading {
-	line-height: 1.1;
-	font-weight: 600;
-	&-XL {
-		/* Heading XL */
-		font-size: 3rem;
-		letter-spacing: -0.2rem;
-	}
-	&-L {
-		/* Heading L */
-		font-size: 2rem;
-		letter-spacing: -0.15rem;
-	}
-	&-M {
-		/* Heading M */
-		font-size: 1.5rem;
-		line-height: normal;
-		letter-spacing: -0.075rem;
-	}
-	&-S {
-		/* Heading S */
-		font-size: 1.25rem;
-		line-height: normal;
-		letter-spacing: -0.0625rem;
-	}
-}
-.f-body {
-	font-weight: 400;
-	line-height: 1.5; /* 1.5rem */
-	&-M {
-		/* Body M */
-		font-size: 1rem;
-	}
-	&-bold {
-		/* Body M (Bold) */
-		font-weight: 600;
-	}
-	&-S {
-		/* Body S */
-		font-size: 0.875rem;
-	}
-}
+@use "modules/fonts";
+@use "modules/calculator";
 
 .m-logo {
 	width: 2.5rem;
@@ -71,35 +22,5 @@
 			#d6e6fe 0%,
 			rgba(214, 252, 254, 0) 100%
 		);
-	}
-}
-.m-bmicalc {
-	padding: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-	border-radius: 1rem;
-	background: var.$c-pure-white;
-	box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
-	&__metric {
-		display: flex;
-		width: 100%;
-		gap: 1.125;
-		align-items: center;
-		justify-content: stretch;
-		&__item {
-			flex-grow: 1;
-		}
-	}
-}
-.m-radio-btn {
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	gap: 1.12rem;
-	position: relative;
-	& > input {
-		position: absolute;
-		appearance: none;
 	}
 }

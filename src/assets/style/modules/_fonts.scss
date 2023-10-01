@@ -1,0 +1,59 @@
+.f {
+	&-heading,
+	&-body {
+		font-family: var(--ff-inter);
+		font-style: normal;
+	}
+}
+.f-center {
+	text-align: center;
+}
+.f-heading {
+	line-height: 1.1;
+	font-weight: 600;
+	//color: var.$c-gunmetal;
+	color: var(--Gunmetal);
+	&-XL {
+		/* Heading XL */
+		font-size: 3rem;
+		letter-spacing: -0.2rem;
+	}
+	&-L {
+		/* Heading L */
+		font-size: 2rem;
+		letter-spacing: -0.15rem;
+	}
+	&-M {
+		/* Heading M */
+		font-size: 1.5rem;
+		line-height: normal;
+		letter-spacing: -0.075rem;
+	}
+	&-S {
+		/* Heading S */
+		font-size: 1.25rem;
+		line-height: normal;
+		letter-spacing: -0.0625rem;
+	}
+}
+.f-body {
+	font-weight: 400;
+	line-height: 1.5; /* 1.5rem */
+	//color: var.$c-dark-electric-blue;
+	color: var(--Dark-Electric-Blue);
+
+	&-M {
+		/* Body M */
+		font-size: 1rem;
+	}
+	&-bold {
+		/* Body M (Bold) */
+		font-weight: 600;
+		//color: var.$c-gunmetal;
+		color: var(--Gunmetal);
+	}
+	&-S {
+		/* Body S */
+		font-size: 0.875rem;
+	}
+}

@@ -1,0 +1,83 @@
+.m-bmicalc {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	border-radius: 1rem;
+	background: var(--Pure-White);
+	box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+	&__metric {
+		display: flex;
+		width: 100%;
+		gap: 1.125;
+		align-items: center;
+		justify-content: stretch;
+		&__item {
+			width: 100%;
+		}
+	}
+	&__data {
+	}
+}
+.m-radio {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 1.12rem;
+	position: relative;
+	&__btn {
+		position: absolute;
+		visibility: hidden;
+		appearance: none;
+	}
+	&__checkmark {
+		display: block;
+		width: 1.875rem;
+		height: 1.875rem;
+		border-radius: 50%;
+
+		outline: 4px solid rgba(var(--Blue), 0.15);
+		background: rgba(var(--Blue), 0.15);
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			border-radius: 50%;
+			background-color: var(--Pure-White);
+			transition: inset 0.2s;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 50%;
+			border-radius: 50%;
+			background-color: var(--Blue);
+			transition: inset 0.2s;
+		}
+	}
+	&__btn:checked ~ &__checkmark {
+		&::before,
+		&::after {
+			inset: 25%;
+		}
+	}
+}
+.m-dataholder {
+	&__title {
+		margin-bottom: 0.5rem;
+	}
+	&__property {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item {
+		width: 100%;
+		padding: 1.25rem 1.5rem;
+		border-radius: 0.75rem;
+		border: 1px solid #d8e2e7;
+		background: var(--Pure-White);
+	}
+}
