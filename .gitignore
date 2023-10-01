@@ -8,5 +8,5 @@ node_modules
 #exclude dist folder (only for local deploy)
 dist
 # exclude packaje-lock.json (only usefull on project-uncomment on project-)
-package-lock.json
+# package-lock.json
 ignore-folder
