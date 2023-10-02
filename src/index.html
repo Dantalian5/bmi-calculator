@@ -24,10 +24,10 @@
 			<div class="l-header__logo">
 				<img class="m-logo" src="assets/images/logo.svg" alt="logo" />
 			</div>
-			<h1 class="l-header__title f-heading f-heading-XL f-center">
+			<h1 class="l-header__title f-heading f-heading-XL f-center c-gunmetal">
 				Body Mass Index Calculator
 			</h1>
-			<p class="l-header__text f-body f-body-M f-center">
+			<p class="l-header__text f-body f-body-M f-center c-deblue">
 				Better understand your weight in relation to your height using our body
 				mass index (BM) calculator. While BMI is not the sole determinant of a
 				healthy weight, it offers a valuable starting point to evaluate your
@@ -35,18 +35,18 @@
 			</p>
 			<div class="l-header__bmicalc">
 				<div class="m-bmicalc" id="myform">
-					<h2 class="m-bmicalc__title f-heading f-heading-M">
+					<h2 class="m-bmicalc__title f-heading f-heading-M c-gunmetal">
 						Enter your details below
 					</h2>
 					<div class="m-bmicalc__metric">
 						<div class="m-bmicalc__metric__item">
 							<label
-								class="f-body f-body-M f-body-bold m-radio"
+								class="f-body f-body-M f--bold c-gunmetal m-radio"
 								for="ms_metric"
 							>
 								<input
 									type="radio"
-									name="metric_system"
+									name="js-metric_system"
 									id="ms_metric"
 									value="metric"
 									class="m-radio__btn"
@@ -58,11 +58,11 @@
 						</div>
 						<div class="m-bmicalc__metric__item">
 							<label
-								class="f-body f-body-M f-body-bold m-radio"
+								class="f-body f-body-M f--bold c-gunmetal m-radio"
 								for="ms_imperial"
 								><input
 									type="radio"
-									name="metric_system"
+									name="js-metric_system"
 									id="ms_imperial"
 									value="imperial"
 									class="m-radio__btn"
@@ -73,23 +73,84 @@
 					</div>
 					<div class="m-bmicalc__data">
 						<fieldset class="m-dataholder">
-							<legend class="f-body f-body-S m-dataholder__title">
+							<legend class="f-body f-body-S c-deblue m-dataholder__title">
 								Height
 							</legend>
-							<div class="m-dataholder__property">
-								<div class=""></div>
-								<input
-									id="data-height"
-									type="number"
-									min="1"
-									step="0.01"
-									max="1000"
-									class="m-dataholder__item"
-									title="your height here"
-									placeholder="hola"
-								/>
+							<div class="m-dataholder__property js-metricInput js-metric">
+								<div class="m-dataholder__item">
+									<input
+										id="data-height"
+										type="number"
+										min="1"
+										step="0.01"
+										max="1000"
+										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										title="your height here"
+									/>
+									<label
+										for="data-height"
+										class="m-dataholder__label --height f-heading f-heading-M"
+									></label>
+								</div>
+								<div class="m-dataholder__item --imperial">
+									<input
+										id="data-height-in"
+										type="number"
+										min="1"
+										step="0.01"
+										max="1000"
+										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										title="your height here"
+									/>
+									<label
+										for="data-height"
+										class="m-dataholder__label f-heading f-heading-M"
+										>in</label
+									>
+								</div>
 							</div>
 						</fieldset>
+						<fieldset class="m-dataholder">
+							<legend class="f-body f-body-S c-deblue m-dataholder__title">
+								Weight
+							</legend>
+							<div class="m-dataholder__property js-metricInput js-metric">
+								<div class="m-dataholder__item">
+									<input
+										id="data-weight"
+										type="number"
+										min="1"
+										step="0.01"
+										max="1000"
+										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										title="your weight here"
+									/>
+									<label
+										for="data-height"
+										class="m-dataholder__label --weight f-heading f-heading-M"
+									></label>
+								</div>
+								<div class="m-dataholder__item --imperial">
+									<input
+										id="data-weight-lbs"
+										type="number"
+										min="1"
+										step="0.01"
+										max="1000"
+										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										title="your weight here"
+									/>
+									<label
+										for="data-height"
+										class="m-dataholder__label f-heading f-heading-M"
+										>lbs</label
+									>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="m-bmicalc__result">
+						<p class="f-body f--bold c-pwhite">Your BMI is...</p>
 					</div>
 				</div>
 			</div>

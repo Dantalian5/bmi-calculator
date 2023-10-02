@@ -4,8 +4,7 @@
 	flex-direction: column;
 	gap: 1.5rem;
 	border-radius: 1rem;
-	//background: var(--Pure-White);
-	background: red;
+	background: var(--Pure-White);
 
 	box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 	&__metric {
@@ -18,7 +17,10 @@
 			width: 100%;
 		}
 	}
-	&__data {
+	&__result {
+		padding: 2rem;
+		border-radius: 1rem;
+		background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
 	}
 }
 .m-radio {
@@ -67,6 +69,9 @@
 	}
 }
 .m-dataholder {
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
 	&__title {
 		margin-bottom: 0.5rem;
 	}
@@ -74,6 +79,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		gap: 1rem;
 	}
 	&__item {
 		width: 100%;
@@ -81,5 +87,46 @@
 		border-radius: 0.75rem;
 		border: 1px solid #d8e2e7;
 		background: var(--Pure-White);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+	&__input {
+		color: var(--Gunmetal, #253347);
+		width: 100%;
+	}
+	&__label {
+		color: var(--Blue, #345ff6);
+	}
+	&__property.js-metric {
+		& > .--imperial {
+			display: none;
+		}
+		& .--height {
+			&::after {
+				content: "cm";
+			}
+		}
+		& .--weight {
+			&::after {
+				content: "kg";
+			}
+		}
+	}
+	&__property.js-imperial {
+		& > .--imperial {
+			display: flex;
+		}
+		& .--height {
+			&::after {
+				content: "ft";
+			}
+		}
+		& .--weight {
+			&::after {
+				content: "st";
+			}
+		}
 	}
 }
