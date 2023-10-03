@@ -14,3 +14,10 @@
 		margin-bottom: 3rem;
 	}
 }
+.l-section1 {
+	&__img {
+		& > img {
+			max-width: 100%;
+		}
+	}
+}

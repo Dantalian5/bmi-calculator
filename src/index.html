@@ -24,10 +24,10 @@
 			<div class="l-header__logo">
 				<img class="m-logo" src="assets/images/logo.svg" alt="logo" />
 			</div>
-			<h1 class="l-header__title f-heading f-heading-XL f-center c-gunmetal">
+			<h1 class="l-header__title f-heading f-h--XL f--center c-gunmetal">
 				Body Mass Index Calculator
 			</h1>
-			<p class="l-header__text f-body f-body-M f-center c-deblue">
+			<p class="l-header__text f-body f-b--M f--center c-deblue">
 				Better understand your weight in relation to your height using our body
 				mass index (BM) calculator. While BMI is not the sole determinant of a
 				healthy weight, it offers a valuable starting point to evaluate your
@@ -35,13 +35,13 @@
 			</p>
 			<div class="l-header__bmicalc">
 				<div class="m-bmicalc" id="myform">
-					<h2 class="m-bmicalc__title f-heading f-heading-M c-gunmetal">
+					<h2 class="m-bmicalc__title f-heading f-h--M c-gunmetal">
 						Enter your details below
 					</h2>
 					<div class="m-bmicalc__metric">
 						<div class="m-bmicalc__metric__item">
 							<label
-								class="f-body f-body-M f--bold c-gunmetal m-radio"
+								class="f-body f-b--M f--bold c-gunmetal m-radio"
 								for="ms_metric"
 							>
 								<input
@@ -58,7 +58,7 @@
 						</div>
 						<div class="m-bmicalc__metric__item">
 							<label
-								class="f-body f-body-M f--bold c-gunmetal m-radio"
+								class="f-body f-b--M f--bold c-gunmetal m-radio"
 								for="ms_imperial"
 								><input
 									type="radio"
@@ -73,7 +73,7 @@
 					</div>
 					<div class="m-bmicalc__data">
 						<fieldset class="m-dataholder">
-							<legend class="f-body f-body-S c-deblue m-dataholder__title">
+							<legend class="f-body f-b--S c-deblue m-dataholder__title">
 								Height
 							</legend>
 							<div class="m-dataholder__property js-metricInput js-metric">
@@ -84,12 +84,12 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your height here"
 									/>
 									<label
 										for="data-height"
-										class="m-dataholder__label --height f-heading f-heading-M"
+										class="m-dataholder__label --height f-heading f-h--M"
 									></label>
 								</div>
 								<div class="m-dataholder__item --imperial">
@@ -99,19 +99,19 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your height here"
 									/>
 									<label
 										for="data-height"
-										class="m-dataholder__label f-heading f-heading-M"
+										class="m-dataholder__label f-heading f-h--M"
 										>in</label
 									>
 								</div>
 							</div>
 						</fieldset>
 						<fieldset class="m-dataholder">
-							<legend class="f-body f-body-S c-deblue m-dataholder__title">
+							<legend class="f-body f-b--S c-deblue m-dataholder__title">
 								Weight
 							</legend>
 							<div class="m-dataholder__property js-metricInput js-metric">
@@ -122,12 +122,12 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your weight here"
 									/>
 									<label
 										for="data-height"
-										class="m-dataholder__label --weight f-heading f-heading-M"
+										class="m-dataholder__label --weight f-heading f-h--M"
 									></label>
 								</div>
 								<div class="m-dataholder__item --imperial">
@@ -137,12 +137,12 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-heading-M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your weight here"
 									/>
 									<label
 										for="data-height"
-										class="m-dataholder__label f-heading f-heading-M"
+										class="m-dataholder__label f-heading f-h--M"
 										>lbs</label
 									>
 								</div>
@@ -151,11 +151,31 @@
 					</div>
 					<div class="m-bmicalc__result">
 						<p class="f-body f--bold c-pwhite">Your BMI is...</p>
+						<output
+							class="f-heading f-h--XL c-pwhite m-bmicalc__result__data"
+							id="bmiResult"
+							name="bmiResult"
+							for=""
+							>23.4</output
+						>
+						<p class="f-body f-b--S c-pwhite">
+							Your BMI suggests you’re a healthy weight. Your ideal weight is
+							between <span class="f-body f--bold">63.3kgs - 85.2kgs.</span>
+						</p>
 					</div>
 				</div>
 			</div>
 		</header>
 
+		<section class="l-section1">
+			<div class="l-section1__img">
+				<img
+					src="assets/images/image-man-eating.webp"
+					alt="men eating healthy"
+				/>
+			</div>
+			<h2 class="f-heading f-h--L c-gunmetal">What your BMI result means</h2>
+		</section>
 		<!-- add javascript file -->
 		<script src="assets/js/script.js"></script>
 	</body>

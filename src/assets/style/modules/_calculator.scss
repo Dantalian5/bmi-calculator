@@ -21,6 +21,10 @@
 		padding: 2rem;
 		border-radius: 1rem;
 		background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+		&__data {
+			display: block;
+			margin-block: 0.5rem 1.5rem;
+		}
 	}
 }
 .m-radio {
