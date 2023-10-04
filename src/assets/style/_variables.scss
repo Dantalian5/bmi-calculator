@@ -17,6 +17,12 @@
 	--Dark-Electric-Blue: #5e6e85;
 	--Borders: #d8e2e7;
 	--Pure-White: #ffffff;
+	--Gradient-1: linear-gradient(
+		290deg,
+		#d6e6fe 0%,
+		rgba(214, 252, 254, 0) 100%
+	);
+	--section-padding-inline: 1.5rem;
 }
 .c-blue {
 	color: var(--Blue);

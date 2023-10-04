@@ -1,7 +1,7 @@
 .l-header {
-	padding-inline: 1.5rem;
-	padding-top: 2rem;
-	margin-bottom: 3rem;
+	padding-block: 2rem;
+	padding-inline: var(--section-padding-inline);
+	margin-bottom: 0.5rem;
 	&__logo {
 		width: fit-content;
 		margin-inline: auto;
@@ -14,10 +14,30 @@
 		margin-bottom: 3rem;
 	}
 }
-.l-section1 {
+.l-section {
+	//padding-inline: 1.5rem;
+	padding-block: 2rem;
+	margin-bottom: 2.5rem;
+
 	&__img {
+		margin-bottom: 3rem;
 		& > img {
 			max-width: 100%;
 		}
 	}
+	&__title {
+		margin-bottom: 2rem;
+	}
+	&__info {
+		margin-bottom: 4.5rem;
+	}
+	&__cards {
+		padding-block: 3.5rem;
+		& > :not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+.l-inner-padding {
+	padding-inline: var(--section-padding-inline);
 }
