@@ -37,6 +37,11 @@
 			margin-bottom: 2.5rem;
 		}
 	}
+	&__cards2 {
+		& > :not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
 }
 .l-inner-padding {
 	padding-inline: var(--section-padding-inline);

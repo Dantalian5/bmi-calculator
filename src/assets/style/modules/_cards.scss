@@ -7,3 +7,19 @@
 		margin-bottom: 1.5rem;
 	}
 }
+.m-card2 {
+	padding: 1.5rem;
+	border-radius: 1rem;
+	background: var(--Pure-White, #fff);
+	box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+	&__heading {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		align-items: center;
+	}
+	&__icon {
+		width: 2rem;
+		height: 2rem;
+	}
+}
