@@ -20,19 +20,22 @@
 		<link rel="stylesheet" href="assets/style/style.scss" />
 	</head>
 	<body>
-		<header class="l-header m-background-1">
-			<div class="l-header__logo">
-				<img class="m-logo" src="assets/images/logo.svg" alt="logo" />
+		<header class="l-header l-section l-inner-padding m-background-1">
+			<div class="l-header__info">
+				<div class="l-header__logo">
+					<img class="m-logo" src="assets/images/logo.svg" alt="logo" />
+				</div>
+				<h1 class="l-header__title f-heading f-h--XL f--center c-gunmetal">
+					Body Mass <br />
+					Index Calculator
+				</h1>
+				<p class="l-header__text f-body f-b--M f--center c-deblue">
+					Better understand your weight in relation to your height using our
+					body mass index (BM) calculator. While BMI is not the sole determinant
+					of a healthy weight, it offers a valuable starting point to evaluate
+					your overall health and well-being.
+				</p>
 			</div>
-			<h1 class="l-header__title f-heading f-h--XL f--center c-gunmetal">
-				Body Mass Index Calculator
-			</h1>
-			<p class="l-header__text f-body f-b--M f--center c-deblue">
-				Better understand your weight in relation to your height using our body
-				mass index (BM) calculator. While BMI is not the sole determinant of a
-				healthy weight, it offers a valuable starting point to evaluate your
-				overall health and well-being.
-			</p>
 			<div class="l-header__bmicalc">
 				<div class="m-bmicalc" id="myform">
 					<h2 class="m-bmicalc__title f-heading f-h--M c-gunmetal">
@@ -150,42 +153,49 @@
 						</fieldset>
 					</div>
 					<div class="m-bmicalc__result">
-						<p class="f-body f--bold c-pwhite">Your BMI is...</p>
-						<output
-							class="f-heading f-h--XL c-pwhite m-bmicalc__result__data"
-							id="bmiResult"
-							name="bmiResult"
-							for=""
-							>23.4</output
-						>
-						<p class="f-body f-b--S c-pwhite">
-							Your BMI suggests you’re a healthy weight. Your ideal weight is
-							between <span class="f-body f--bold">63.3kgs - 85.2kgs.</span>
-						</p>
+						<div class="m-bmicalc__result__column">
+							<p class="f-body f--bold c-pwhite">Your BMI is...</p>
+							<output
+								class="f-heading f-h--XL c-pwhite m-bmicalc__result__data"
+								id="bmiResult"
+								name="bmiResult"
+								for=""
+								>23.4</output
+							>
+						</div>
+						<div class="m-bmicalc__result__column">
+							<p class="f-body f-b--S c-pwhite">
+								Your BMI suggests you’re a healthy weight. Your ideal weight is
+								between <span class="f-body f--bold">63.3kgs - 85.2kgs.</span>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<section class="l-section">
-			<div class="l-section__img">
-				<img
-					src="assets/images/image-man-eating.webp"
-					alt="man eating a healthy food"
-				/>
-			</div>
-			<div class="l-section__info l-inner-padding">
-				<h2 class="l-section__title f-heading f-h--L c-gunmetal">
-					What your BMI result means
-				</h2>
-				<p class="l-section__body f-body f-b--M c-deblue">
-					A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
-					Maintaining a healthy weight may lower your chances of experiencing
-					health issues later on, such as obesity and type 2 diabetes. Aim for a
-					nutritious diet with reduced fat and sugar content, incorporating
-					ample fruits and vegetables. Additionally, strive for regular physical
-					activity, ideally about 30 minutes daily for five days a week.
-				</p>
+			<div class="l-section__wrapper">
+				<div class="l-section__img">
+					<img
+						src="assets/images/image-man-eating.webp"
+						alt="man eating a healthy food"
+					/>
+				</div>
+				<div class="l-section__info l-inner-padding">
+					<h2 class="l-section__title f-heading f-h--L c-gunmetal">
+						What your BMI result means
+					</h2>
+					<p class="l-section__body f-body f-b--M c-deblue">
+						A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+						Maintaining a healthy weight may lower your chances of experiencing
+						health issues later on, such as obesity and type 2 diabetes. Aim for
+						a nutritious diet with reduced fat and sugar content, incorporating
+						ample fruits and vegetables. Additionally, strive for regular
+						physical activity, ideally about 30 minutes daily for five days a
+						week.
+					</p>
+				</div>
 			</div>
 			<div class="l-section__cards l-inner-padding m-background-2">
 				<div class="m-card">

@@ -22,7 +22,9 @@
 		#d6e6fe 0%,
 		rgba(214, 252, 254, 0) 100%
 	);
-	--section-padding-inline: 1.5rem;
+	--section-padding-inline: max(1.5rem, 5.5%);
+	--size-tablet: 700px;
+	--size-desktop: 100px;
 }
 .c-blue {
 	color: var(--Blue);
@@ -36,3 +38,5 @@
 .c-pwhite {
 	color: var(--Pure-White);
 }
+$breakpoint-tablet: 700px;
+$breakpoint-desktop: 1000px;
