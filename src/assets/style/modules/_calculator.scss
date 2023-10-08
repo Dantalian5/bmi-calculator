@@ -97,11 +97,7 @@
 		gap: 1rem;
 	}
 	&__input {
-		color: var(--Gunmetal, #253347);
 		width: 100%;
-	}
-	&__label {
-		color: var(--Blue, #345ff6);
 	}
 	&__property.js-metric {
 		& > .--imperial {

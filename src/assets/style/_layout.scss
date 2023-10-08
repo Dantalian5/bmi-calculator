@@ -18,7 +18,9 @@
 	//padding-inline: 1.5rem;
 	padding-block: 2rem;
 	margin-bottom: 2.5rem;
-
+	&:last-of-type {
+		margin-bottom: 4rem;
+	}
 	&__img {
 		margin-bottom: 3rem;
 		& > img {
