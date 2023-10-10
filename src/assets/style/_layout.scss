@@ -1,20 +1,37 @@
 @use "variables" as var;
-.l-header {
-	padding-top: 2rem;
-	&__logo {
-		width: fit-content;
-		margin-inline: auto;
-		margin-bottom: 1.5rem;
-	}
+.section {
+	width: clamp(18.75rem, 100%, 90rem);
+	margin-inline: auto;
+	margin-block: 0 4.5rem;
+	display: flex;
+	flex-wrap: wrap;
 	&__title {
+		margin-bottom: 2rem;
+	}
+}
+.header {
+	padding-inline: var(--section-padding-inline);
+	padding-top: 2rem;
+	column-gap: 2rem;
+	align-items: center;
+	&__logo {
+		width: 100%;
 		margin-bottom: 1.5rem;
 	}
 	&__info {
 		margin-bottom: 3rem;
 	}
+	&__bmicalc {
+	}
+	&__info,
+	&__bmicalc {
+		flex: 1 1 200px;
+	}
+	&__title {
+		margin-bottom: 1.5rem;
+	}
 }
-.l-section {
-	margin-bottom: 4.5rem;
+.section-2 {
 	&__wrapper {
 		width: 100%;
 		display: flex;
@@ -24,29 +41,43 @@
 		align-items: center;
 	}
 	&__img,
+	&__header {
+		flex: 1 1 18rem;
+	}
+	&__header,
 	&__info {
-		flex: 1 1 50%;
+		padding-inline: var(--section-padding-inline);
 	}
-	&__title {
-		margin-bottom: 2rem;
-	}
-	&__cards {
+	&__info {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 2.5rem;
 		padding-block: 3.5rem;
-		& > :not(:last-child) {
-			margin-bottom: 2.5rem;
-		}
-	}
-	&__cards2 {
-		& > :not(:last-child) {
-			margin-bottom: 1rem;
-		}
 	}
 }
-.l-inner-padding {
+.section-3 {
 	padding-inline: var(--section-padding-inline);
+	row-gap: 1rem;
+	column-gap: 0.9375rem;
+	align-items: stretch;
+	justify-content: space-evenly;
+	& > .section__heading {
+		flex: 1 1 100%;
+		margin-bottom: 2.5rem;
+	}
+	& > .m-card2 {
+		flex: 1 1 18rem;
+		max-width: 20.9688rem;
+	}
 }
 @media (min-width: var.$breakpoint-tablet) {
-	.l-header {
+	.section {
+		margin-bottom: 6rem;
+		&__cards {
+			padding-block: 3.75rem;
+		}
+	}
+	.header {
 		&__logo {
 			margin-bottom: 2.5rem;
 		}
@@ -54,17 +85,43 @@
 			margin-bottom: 2.5rem;
 		}
 	}
-	.l-section {
-		margin-bottom: 6rem;
+	.section-2 {
 		&__img {
 			position: relative;
-			left: -6%;
+			left: -8%;
 		}
-		&__info {
-			padding-left: 1.5rem;
+		&__header {
+			padding-left: 0;
 		}
-		&__cards {
-			padding-block: 3.75rem;
+	}
+	.section-3 {
+		row-gap: 1.5rem;
+	}
+}
+@media (min-width: var.$breakpoint-desktop) {
+	.header {
+	}
+	.section-3 {
+		justify-content: right;
+		column-gap: 2rem;
+		& > .section__heading {
+			max-width: 50%;
+		}
+		& > .m-card2 {
+			flex-basis: 22.8125rem;
+			max-width: 22.8125rem;
+			&:nth-child(2) {
+				margin-inline: auto;
+			}
+			&:nth-child(3) {
+				margin-left: 30%;
+			}
+			&:nth-child(5) {
+				margin-left: auto;
+			}
+			&:nth-child(6) {
+				margin-right: auto;
+			}
 		}
 	}
 }

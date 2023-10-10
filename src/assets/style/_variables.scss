@@ -40,3 +40,8 @@
 }
 $breakpoint-tablet: 700px;
 $breakpoint-desktop: 1000px;
+@media screen and (min-width: $breakpoint-desktop) {
+	:root {
+		--section-padding-inline: min(10%, 8.75rem);
+	}
+}

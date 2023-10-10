@@ -1,9 +1,12 @@
 @use "modules/fonts";
 @use "modules/calculator";
 @use "modules/cards";
+@use "variables" as var;
 .m-logo {
-	width: 4.5rem;
+	display: block;
+	width: 2.5rem;
 	height: 2.5rem;
+	margin-inline: auto;
 }
 .m-background-1 {
 	position: relative;
@@ -32,5 +35,17 @@
 		inset: 0;
 		background: var(--Gradient-1);
 		opacity: 0.25;
+	}
+}
+@media (min-width: var.$breakpoint-tablet) {
+}
+@media (min-width: var.$breakpoint-desktop) {
+	.f--center {
+		text-align: left;
+	}
+	.m-logo {
+		width: 4rem;
+		height: 4rem;
+		margin-left: 0;
 	}
 }
