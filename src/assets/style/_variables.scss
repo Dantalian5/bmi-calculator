@@ -38,7 +38,7 @@
 .c-pwhite {
 	color: var(--Pure-White);
 }
-$breakpoint-tablet: 700px;
+$breakpoint-tablet: 600px;
 $breakpoint-desktop: 1024px;
 @media screen and (min-width: $breakpoint-desktop) {
 	:root {

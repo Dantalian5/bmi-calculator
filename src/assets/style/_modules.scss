@@ -8,7 +8,7 @@
 	height: 2.5rem;
 	margin-inline: auto;
 }
-.m-background-1 {
+.m-background-header {
 	position: relative;
 	&::before {
 		position: absolute;
@@ -45,10 +45,22 @@
 	}
 	.f-h--XL {
 		font-size: 4rem;
+		letter-spacing: -0.2rem;
+	}
+	.f-h--L {
+		font-size: 3rem;
+		letter-spacing: -0.15rem;
 	}
 	.m-logo {
 		width: 4rem;
 		height: 4rem;
 		margin-left: 0;
+	}
+	.m-background-header {
+		&::before {
+			height: 46.0625rem;
+			left: 1.5rem;
+			width: 68%;
+		}
 	}
 }
