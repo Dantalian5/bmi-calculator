@@ -7,7 +7,7 @@
 	],
 	"scripts": {
 		"dev": "parcel",
-		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public"
+		"build": "parcel build --no-source-maps --no-content-hash --public-url ./z --dist-dir public"
 	},
 	"keywords": [],
 	"author": "Marcos Valenzuela",

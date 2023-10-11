@@ -1,0 +1,1 @@
+const e=document.querySelectorAll(".js-metricInput");document.querySelectorAll("input[name=js-metric_system]").forEach(s=>{s.addEventListener("click",c=>{"metric"==s.value?e.forEach(e=>{e.classList.add("js-metric"),e.classList.remove("js-imperial")}):"imperial"==s.value&&e.forEach(e=>{e.classList.remove("js-metric"),e.classList.add("js-imperial")})})});
