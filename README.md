@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Dantalian5/bmi-calculator)
-- Live Site URL: [Live site (Vercel)](https://bmi-calculator-mu-pied.vercel.app/)
+- Live Site URL: [Live site (Vercel)](https://bmi-calculator-pearl.vercel.app/)
 
 ## My process
 
