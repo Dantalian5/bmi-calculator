@@ -70,6 +70,9 @@
 		max-width: 20.9688rem;
 	}
 }
+.card-separator {
+	display: none;
+}
 @media (min-width: var.$breakpoint-tablet) {
 	.section {
 		margin-bottom: 6rem;
@@ -139,7 +142,10 @@
 		justify-content: right;
 		column-gap: 2rem;
 		& > .section__heading {
-			max-width: 50%;
+			max-width: 47%;
+		}
+		& > .card-separator {
+			display: block;
 		}
 		& > .m-card2 {
 			flex-basis: 22.8125rem;
@@ -147,13 +153,11 @@
 			&:nth-child(2) {
 				margin-inline: auto;
 			}
-			&:nth-child(3) {
-				margin-left: 30%;
-			}
-			&:nth-child(5) {
+			&:nth-child(3),
+			&:nth-child(6) {
 				margin-left: auto;
 			}
-			&:nth-child(6) {
+			&:nth-child(7) {
 				margin-right: auto;
 			}
 		}
