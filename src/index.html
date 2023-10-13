@@ -37,7 +37,7 @@
 				</p>
 			</div>
 			<div class="header__bmicalc">
-				<div class="m-bmicalc" id="myform">
+				<div class="m-bmicalc" id="jsBMIcalculator">
 					<h2 class="m-bmicalc__title f-heading f-h--M c-gunmetal">
 						Enter your details below
 					</h2>
@@ -89,6 +89,7 @@
 										max="1000"
 										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your height here"
+										placeholder="0"
 									/>
 									<label
 										for="data-height"
@@ -104,6 +105,7 @@
 										max="1000"
 										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your height here"
+										placeholder="0"
 									/>
 									<label
 										for="data-height"
@@ -127,6 +129,7 @@
 										max="1000"
 										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your weight here"
+										placeholder="0"
 									/>
 									<label
 										for="data-height"
@@ -142,6 +145,7 @@
 										max="1000"
 										class="m-dataholder__input f-heading f-h--M c-gunmetal"
 										title="your weight here"
+										placeholder="0"
 									/>
 									<label
 										for="data-height"
@@ -153,6 +157,12 @@
 						</fieldset>
 					</div>
 					<div class="m-bmicalc__result">
+						<div class="m-bmicalc__welcome-msg">
+							<h3 class="f-heading f-h--M c-pwhite">Welcome!</h3>
+							<p class="f-body f-b--S c-pwhite">
+								Enter your height and weight and you’ll see your BMI result here
+							</p>
+						</div>
 						<div class="m-bmicalc__result__column">
 							<p class="f-body f--bold c-pwhite">Your BMI is...</p>
 							<output
