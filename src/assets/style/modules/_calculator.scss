@@ -1,4 +1,5 @@
 @use "../variables" as var;
+
 .m-bmicalc {
 	padding: 1.5rem;
 	display: flex;
@@ -123,37 +124,13 @@
 			opacity: 0.25;
 		}
 	}
-	&__property.js-metric {
+	&__property {
 		& > .--imperial {
 			display: none;
 		}
-		& .--height {
-			&::after {
-				content: "cm";
-			}
-		}
-		& .--weight {
-			&::after {
-				content: "kg";
-			}
-		}
-	}
-	&__property.js-imperial {
-		& > .--imperial {
-			display: flex;
-		}
-		& .--height {
-			&::after {
-				content: "ft";
-			}
-		}
-		& .--weight {
-			&::after {
-				content: "st";
-			}
-		}
 	}
 }
+
 @media screen and (min-width: var.$breakpoint-tablet) {
 	.m-bmicalc {
 		padding: 2rem;

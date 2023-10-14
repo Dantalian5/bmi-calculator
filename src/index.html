@@ -37,7 +37,7 @@
 				</p>
 			</div>
 			<div class="header__bmicalc">
-				<div class="m-bmicalc" id="jsBMIcalculator">
+				<div class="m-bmicalc" id="js-bmiCalculator">
 					<h2 class="m-bmicalc__title f-heading f-h--M c-gunmetal">
 						Enter your details below
 					</h2>
@@ -79,11 +79,13 @@
 							<legend class="f-body f-b--S c-deblue m-dataholder__title">
 								Height
 							</legend>
-							<div class="m-dataholder__property js-metricInput js-metric">
+							<div class="m-dataholder__property">
 								<div class="m-dataholder__item">
 									<input
-										id="data-height"
+										id="js-bmiDataHeight"
 										type="number"
+										data-type="height"
+										data-order="1"
 										min="1"
 										step="0.01"
 										max="1000"
@@ -92,14 +94,19 @@
 										placeholder="0"
 									/>
 									<label
-										for="data-height"
-										class="m-dataholder__label --height f-heading f-h--M c-blue"
-									></label>
+										id="js-heightLabel"
+										for="js-bmiDataHeight"
+										class="m-dataholder__label f-heading f-h--M c-blue"
+										data-type="height"
+										>cm</label
+									>
 								</div>
 								<div class="m-dataholder__item --imperial">
 									<input
-										id="data-height-in"
+										id="js-bmiDataHeightIn"
 										type="number"
+										data-type="height"
+										data-order="2"
 										min="1"
 										step="0.01"
 										max="1000"
@@ -108,8 +115,9 @@
 										placeholder="0"
 									/>
 									<label
-										for="data-height"
+										for="js-bmiDataHeightIn"
 										class="m-dataholder__label f-heading f-h--M c-blue"
+										data-type="height"
 										>in</label
 									>
 								</div>
@@ -119,11 +127,13 @@
 							<legend class="f-body f-b--S c-deblue m-dataholder__title">
 								Weight
 							</legend>
-							<div class="m-dataholder__property js-metricInput js-metric">
+							<div class="m-dataholder__property">
 								<div class="m-dataholder__item">
 									<input
-										id="data-weight"
+										id="js-bmiDataWeight"
 										type="number"
+										data-type="weight"
+										data-order="1"
 										min="1"
 										step="0.01"
 										max="1000"
@@ -132,14 +142,19 @@
 										placeholder="0"
 									/>
 									<label
-										for="data-height"
-										class="m-dataholder__label --weight f-heading f-h--M c-blue"
-									></label>
+										id="js-weightLabel"
+										for="js-bmiDataWeight"
+										class="m-dataholder__label f-heading f-h--M c-blue"
+										data-type="weight"
+										>kg</label
+									>
 								</div>
 								<div class="m-dataholder__item --imperial">
 									<input
-										id="data-weight-lbs"
+										id="js-bmiDataWeightLbs"
 										type="number"
+										data-type="weight"
+										data-order="2"
 										min="1"
 										step="0.01"
 										max="1000"
@@ -148,8 +163,9 @@
 										placeholder="0"
 									/>
 									<label
-										for="data-height"
+										for="js-bmiDataWeightLbs"
 										class="m-dataholder__label f-heading f-h--M c-blue"
+										data-type="weight"
 										>lbs</label
 									>
 								</div>
@@ -169,14 +185,14 @@
 								class="f-heading f-h--XL c-pwhite m-bmicalc__result__data"
 								id="bmiResult"
 								name="bmiResult"
-								for=""
 								>23.4</output
 							>
 						</div>
 						<div class="m-bmicalc__result__column">
 							<p class="f-body f-b--S c-pwhite">
-								Your BMI suggests you’re a healthy weight. Your ideal weight is
-								between <span class="f-body f--bold">63.3kgs - 85.2kgs.</span>
+								Your BMI suggests you&rsaquo;re a healthy weight. Your ideal
+								weight is between
+								<span class="f-body f--bold">63.3kgs - 85.2kgs.</span>
 							</p>
 						</div>
 					</div>
