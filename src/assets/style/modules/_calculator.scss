@@ -26,7 +26,8 @@
 	}
 	&__welcome-msg {
 		width: 100%;
-		display: block;
+		//display: block;
+		display: none;
 		& > h3 {
 			margin-bottom: 1rem;
 		}
@@ -44,7 +45,8 @@
 			margin-block: 0.5rem 0;
 		}
 		&__column {
-			display: none;
+			//display: none;
+			display: block;
 			flex: 1 1 100%;
 		}
 	}
@@ -117,16 +119,14 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
+		&--imperial {
+			display: none;
+		}
 	}
 	&__input {
 		width: 100%;
 		&::placeholder {
 			opacity: 0.25;
-		}
-	}
-	&__property {
-		& > .--imperial {
-			display: none;
 		}
 	}
 }

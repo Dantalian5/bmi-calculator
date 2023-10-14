@@ -1,9 +1,7 @@
 .js--imperial.m-bmicalc {
-	& .m-dataholder {
-		&__property {
-			& > .--imperial {
-				display: flex;
-			}
+	& .m-dataholder__item {
+		&--imperial {
+			display: flex;
 		}
 	}
 }

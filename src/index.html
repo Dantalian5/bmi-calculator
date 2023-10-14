@@ -89,7 +89,7 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-h--M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal js-inputData"
 										title="your height here"
 										placeholder="0"
 									/>
@@ -101,7 +101,7 @@
 										>cm</label
 									>
 								</div>
-								<div class="m-dataholder__item --imperial">
+								<div class="m-dataholder__item m-dataholder__item--imperial">
 									<input
 										id="js-bmiDataHeightIn"
 										type="number"
@@ -110,7 +110,7 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-h--M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal js-inputData"
 										title="your height here"
 										placeholder="0"
 									/>
@@ -137,7 +137,7 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-h--M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal js-inputData"
 										title="your weight here"
 										placeholder="0"
 									/>
@@ -149,7 +149,7 @@
 										>kg</label
 									>
 								</div>
-								<div class="m-dataholder__item --imperial">
+								<div class="m-dataholder__item m-dataholder__item--imperial">
 									<input
 										id="js-bmiDataWeightLbs"
 										type="number"
@@ -158,7 +158,7 @@
 										min="1"
 										step="0.01"
 										max="1000"
-										class="m-dataholder__input f-heading f-h--M c-gunmetal"
+										class="m-dataholder__input f-heading f-h--M c-gunmetal js-inputData"
 										title="your weight here"
 										placeholder="0"
 									/>
@@ -176,14 +176,15 @@
 						<div class="m-bmicalc__welcome-msg">
 							<h3 class="f-heading f-h--M c-pwhite">Welcome!</h3>
 							<p class="f-body f-b--S c-pwhite">
-								Enter your height and weight and you’ll see your BMI result here
+								Enter your height and weight and you&rsaquo;ll see your BMI
+								result here
 							</p>
 						</div>
 						<div class="m-bmicalc__result__column">
 							<p class="f-body f--bold c-pwhite">Your BMI is...</p>
 							<output
 								class="f-heading f-h--XL c-pwhite m-bmicalc__result__data"
-								id="bmiResult"
+								id="js-bmiResult"
 								name="bmiResult"
 								>23.4</output
 							>
