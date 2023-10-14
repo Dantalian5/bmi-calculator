@@ -26,8 +26,7 @@
 	}
 	&__welcome-msg {
 		width: 100%;
-		//display: block;
-		display: none;
+		display: block;
 		& > h3 {
 			margin-bottom: 1rem;
 		}
@@ -45,8 +44,7 @@
 			margin-block: 0.5rem 0;
 		}
 		&__column {
-			//display: none;
-			display: block;
+			display: none;
 			flex: 1 1 100%;
 		}
 	}

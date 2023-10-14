@@ -26,23 +26,37 @@ function toggleMetricUnit(state) {
 		document.getElementById("js-weightLabel").innerText = "st";
 	}
 }
-function bmiOutput(res) {
-	let result;
+function bmiOutput() {
+	let result = 0;
+	let cont = 1;
 	let height1 = Array.from(inputData).filter((item) => {
 		return item.dataset.type === "height" && item.dataset.order === "1";
 	})[0].value;
+	height1 = height1 !== "" ? +height1 : 0;
 	let weight1 = Array.from(inputData).filter((item) => {
 		return item.dataset.type === "weight" && item.dataset.order === "1";
 	})[0].value;
-	if (height1 == "") {
-		height1 = 0;
+	weight1 = weight1 !== "" ? +weight1 : 0;
+	if (!metricState) {
+		let height2 = Array.from(inputData).filter((item) => {
+			return item.dataset.type === "height" && item.dataset.order === "2";
+		})[0].value;
+		height2 = height2 !== "" ? +height2 : 0;
+		let weight2 = Array.from(inputData).filter((item) => {
+			return item.dataset.type === "weight" && item.dataset.order === "2";
+		})[0].value;
+		weight2 = weight2 !== "" ? +weight2 : 0;
+		height1 = height1 * 12 + height2;
+		weight1 = weight1 * 14 + weight2;
+		cont = 703;
 	}
-	if (weight1 == "") {
-		weight1 = 0;
-	}
-	result = weight1 / (height1 * 0.01) ** 2;
-	console.log(result);
+	result = (weight1 / height1 ** 2) * cont;
 	bmiResult.value = result.toFixed(1);
+	if (isNaN(bmiResult.value) || !isFinite(bmiResult.value)) {
+		bmiCalculator.classList.remove("js-bmiActive");
+	} else {
+		bmiCalculator.classList.add("js-bmiActive");
+	}
 }
 
 const metricSystem = document
@@ -62,9 +76,9 @@ const metricSystem = document
 inputData.forEach((inputItem) => {
 	inputItem.addEventListener("input", (event) => {
 		if (inputItem.value != 0) {
-			bmiOutput(1);
+			bmiOutput();
 		} else {
-			bmiOutput(3);
+			bmiOutput();
 		}
 	});
 });
