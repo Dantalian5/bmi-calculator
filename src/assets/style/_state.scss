@@ -1,0 +1,17 @@
+.js--imperial.m-bmicalc {
+	& .m-dataholder__item {
+		&--imperial {
+			display: flex;
+		}
+	}
+}
+.js-bmiActive.m-bmicalc {
+	& .m-bmicalc__welcome-msg {
+		display: none;
+	}
+	& .m-bmicalc__result {
+		&__column {
+			display: block;
+		}
+	}
+}
