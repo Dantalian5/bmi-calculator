@@ -10,7 +10,9 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Specs](#specs)
 - [Author](#author)
+  - [Feedbacks](#feedbacks)
 
 ## Overview
 
@@ -45,7 +47,21 @@ Users should be able to:
 - Javascript
 - ParcelJs (bundler)
 
+### Specs
+
+This project can:
+
+- Calculate BMI index based on height an weight;
+- Calculate optimal BMI index based only on hight;
+- Convert from the metric system to the imperial system automatically, enhancing the user experience.
+
 ## Author
 
 - Website - [Marcos Valenzuela](https://marcosvalenzuela.netlify.app)
 - Frontend Mentor - [@Dantalian5](https://www.frontendmentor.io/profile/Dantalian5)
+
+### Feedbacks
+
+All feedback is welcome and appreciated. Feel free to reach out if you have any ideas or advice that can improve this project. Thanks in advance.
+
+Build with love by [My](https://marcosvalenzuela.netlify.app) and designed with passion by [Frontend Mentor](https://www.frontendmentor.io)
