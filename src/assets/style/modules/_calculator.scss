@@ -96,7 +96,7 @@
 }
 .m-dataholder {
 	flex: 1 1 10rem;
-	min-width: fit-content;
+	min-width: min-content;
 	&__title {
 		margin-bottom: 0.5rem;
 	}
